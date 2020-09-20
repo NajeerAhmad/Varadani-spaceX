@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SpaceXListComponent } from './space-x-list/space-x-list.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', redirectTo: '/', pathMatch: 'full' },
+  {
+    path: 'list', component: SpaceXListComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

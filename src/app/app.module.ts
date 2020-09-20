@@ -3,16 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SpaceXListComponent } from './space-x-list/space-x-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SpaceXServiceService } from './services/space-x-service.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    SpaceXListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SpaceXServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
