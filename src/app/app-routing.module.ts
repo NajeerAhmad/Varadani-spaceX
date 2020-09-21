@@ -6,7 +6,7 @@ import { SpaceXListComponent } from './space-x-list/space-x-list.component';
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   {
-    path: 'list', component: SpaceXListComponent
+    path: '', component: SpaceXListComponent
   }
 ];
 
